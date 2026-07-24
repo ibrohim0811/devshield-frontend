@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevGuard.uz - Premium Web & API Xavfsizlik Skaneri</title>
-    <meta name="description" content="DevGuard - Web sahifalar va API backend tizimlarini avtomatlashtirilgan xavfsizlik skanerlash va monitoring qilish platformasi. Premium xavfsizlik va ishonch.">
+    <meta name="description"
+        content="DevGuard - Web sahifalar va API backend tizimlarini avtomatlashtirilgan xavfsizlik skanerlash va monitoring qilish platformasi. Premium xavfsizlik va ishonch.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <meta name="devguard" content="devshield-verification:cc2cd3a161f44713a0">
+
     <style>
         /* CSS RESET & VARIABLES */
         :root {
@@ -33,7 +38,8 @@
             user-select: none;
         }
 
-        html, body {
+        html,
+        body {
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: var(--font-sans);
@@ -66,7 +72,7 @@
             right: 10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, var(--accent-gold-bright) 0%, rgba(3,3,4,0) 70%);
+            background: radial-gradient(circle, var(--accent-gold-bright) 0%, rgba(3, 3, 4, 0) 70%);
             animation: float-blob-1 25s infinite alternate ease-in-out;
         }
 
@@ -75,7 +81,7 @@
             left: -5%;
             width: 700px;
             height: 700px;
-            background: radial-gradient(circle, #3b82f6 0%, rgba(3,3,4,0) 70%);
+            background: radial-gradient(circle, #3b82f6 0%, rgba(3, 3, 4, 0) 70%);
             animation: float-blob-2 30s infinite alternate ease-in-out;
         }
 
@@ -84,26 +90,50 @@
             left: 30%;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, #8b5cf6 0%, rgba(3,3,4,0) 70%);
+            background: radial-gradient(circle, #8b5cf6 0%, rgba(3, 3, 4, 0) 70%);
             animation: float-blob-3 20s infinite alternate ease-in-out;
         }
 
         @keyframes float-blob-1 {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(-100px, 80px) scale(1.15); }
-            100% { transform: translate(50px, -50px) scale(0.9); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(-100px, 80px) scale(1.15);
+            }
+
+            100% {
+                transform: translate(50px, -50px) scale(0.9);
+            }
         }
 
         @keyframes float-blob-2 {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(120px, -120px) scale(0.85); }
-            100% { transform: translate(-60px, 60px) scale(1.1); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(120px, -120px) scale(0.85);
+            }
+
+            100% {
+                transform: translate(-60px, 60px) scale(1.1);
+            }
         }
 
         @keyframes float-blob-3 {
-            0% { transform: translate(0, 0) scale(0.95); }
-            50% { transform: translate(-50px, -50px) scale(1.08); }
-            100% { transform: translate(80px, 80px) scale(0.95); }
+            0% {
+                transform: translate(0, 0) scale(0.95);
+            }
+
+            50% {
+                transform: translate(-50px, -50px) scale(1.08);
+            }
+
+            100% {
+                transform: translate(80px, 80px) scale(0.95);
+            }
         }
 
         /* GRID OVERLAY */
@@ -113,7 +143,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
             background-size: 60px 60px;
@@ -363,9 +393,20 @@
         }
 
         @keyframes pulse-glow {
-            0% { transform: scale(0.9); opacity: 0.6; }
-            50% { transform: scale(1.1); opacity: 1; }
-            100% { transform: scale(0.9); opacity: 0.6; }
+            0% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
         }
 
         .hero h1 {
@@ -457,8 +498,13 @@
         }
 
         @keyframes scroll-carousel {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         .client-logo {
@@ -728,7 +774,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
         }
 
         .cta-glass-box::before {
@@ -813,7 +859,7 @@
             transform: translateX(-50%);
             width: 250px;
             height: 250px;
-            background: radial-gradient(circle, rgba(243, 192, 106, 0.15) 0%, rgba(3,3,4,0) 70%);
+            background: radial-gradient(circle, rgba(243, 192, 106, 0.15) 0%, rgba(3, 3, 4, 0) 70%);
             z-index: -1;
             filter: blur(30px);
         }
@@ -987,7 +1033,9 @@
         }
 
         @media (max-width: 768px) {
-            nav, .nav-buttons {
+
+            nav,
+            .nav-buttons {
                 display: none;
             }
 
@@ -1020,6 +1068,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Liquid Background Effects -->
@@ -1033,8 +1082,9 @@
     <!-- HEADER / NAVIGATION -->
     <header>
         <a href="#" class="logo">
-            <svg class="logo-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <svg class="logo-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
             <span>devguard.uz</span>
         </a>
@@ -1076,7 +1126,8 @@
             Web Sahifalar va API Backend<br><span>Tizimlarini Skanerlash</span>
         </h1>
         <p>
-            Vulnerability scanning, xavfsizlik auditlari va API integratsiyalarini real vaqt rejimida tekshiruvchi premium darajadagi kibermudofaa platformasi. Saytingizni ishonchli himoya ostiga oling.
+            Vulnerability scanning, xavfsizlik auditlari va API integratsiyalarini real vaqt rejimida tekshiruvchi
+            premium darajadagi kibermudofaa platformasi. Saytingizni ishonchli himoya ostiga oling.
         </p>
         <div class="hero-actions">
             <button class="btn btn-gold open-modal">Tekshirishni boshlash</button>
@@ -1091,51 +1142,59 @@
                     <!-- Client 1: Oracle -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#ffffff" letter-spacing="2">ORACLE</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="15"
+                                fill="#ffffff" letter-spacing="2">ORACLE</text>
                         </svg>
                     </div>
                     <!-- Client 2: Lenovo -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#ffffff" letter-spacing="1">Lenovo</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="16"
+                                fill="#ffffff" letter-spacing="1">Lenovo</text>
                         </svg>
                     </div>
                     <!-- Client 3: Grok.com -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#ffffff" letter-spacing="0">grok.com</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="900" font-size="16"
+                                fill="#ffffff" letter-spacing="0">grok.com</text>
                         </svg>
                     </div>
                     <!-- Client 4: UzCombinator -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#ffffff" letter-spacing="0.5">UzCombinator</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="14"
+                                fill="#ffffff" letter-spacing="0.5">UzCombinator</text>
                         </svg>
                     </div>
-                    
+
                     <!-- Duplicated logos for infinite loop -->
                     <!-- Client 1: Oracle -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#ffffff" letter-spacing="2">ORACLE</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="15"
+                                fill="#ffffff" letter-spacing="2">ORACLE</text>
                         </svg>
                     </div>
                     <!-- Client 2: Lenovo -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#ffffff" letter-spacing="1">Lenovo</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="16"
+                                fill="#ffffff" letter-spacing="1">Lenovo</text>
                         </svg>
                     </div>
                     <!-- Client 3: Grok.com -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="900" font-size="16" fill="#ffffff" letter-spacing="0">grok.com</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="900" font-size="16"
+                                fill="#ffffff" letter-spacing="0">grok.com</text>
                         </svg>
                     </div>
                     <!-- Client 4: UzCombinator -->
                     <div class="client-logo">
                         <svg viewBox="0 0 150 30" fill="none">
-                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#ffffff" letter-spacing="0.5">UzCombinator</text>
+                            <text x="10" y="20" font-family="'Outfit', sans-serif" font-weight="700" font-size="14"
+                                fill="#ffffff" letter-spacing="0.5">UzCombinator</text>
                         </svg>
                     </div>
                 </div>
@@ -1154,24 +1213,30 @@
             <div class="feature-card">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                        <line x1="8" y1="21" x2="16" y2="21" />
+                        <line x1="12" y1="17" x2="12" y2="21" />
                     </svg>
                 </div>
                 <h3>Web Sahifalar Skaneri</h3>
                 <p>Front-end va statik resurslarning xavfsizlik tahlili:</p>
                 <ul class="feature-list">
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         XSS (Cross-Site Scripting) zaifliklari tahlili
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         Kutubxonalar va framework xatoliklari
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         SSL/TLS sertifikat sertifikatsiyasi testi
                     </li>
                 </ul>
@@ -1181,23 +1246,29 @@
             <div class="feature-card">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="16 18 22 12 16 6"/>
-                        <polyline points="8 6 2 12 8 18"/>
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
                     </svg>
                 </div>
                 <h3>API Backend Skaneri</h3>
                 <p>Backend va API endpointlarning xavfsizlik holati tahlili:</p>
                 <ul class="feature-list">
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         REST va GraphQL API audit tekshiruvi
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         SQL Injection va ma'lumot sizib chiqishi testi
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
                         Avtorizatsiya (OAuth/JWT) xavfsizlik testlari
                     </li>
                 </ul>
@@ -1213,34 +1284,37 @@
         </div>
         <div class="steps-grid">
             <div class="steps-line"></div>
-            
+
             <!-- Step 1 -->
             <div class="step-card">
                 <div class="step-number">1</div>
                 <div>
                     <h4>Ro'yxatdan o'tish</h4>
-                    <p style="margin-top: 5px;">Platformada premium akkount yaratasiz va xavfsizlik paneliga kirasiz.</p>
+                    <p style="margin-top: 5px;">Platformada premium akkount yaratasiz va xavfsizlik paneliga kirasiz.
+                    </p>
                 </div>
             </div>
-            
+
             <!-- Step 2 -->
             <div class="step-card">
                 <div class="step-number">2</div>
                 <div>
                     <h4>Web sayt qo'shish</h4>
-                    <p style="margin-top: 5px;">Tekshirmoqchi bo'lgan sayt manzili yoki API endpointlarini kiritasiz.</p>
+                    <p style="margin-top: 5px;">Tekshirmoqchi bo'lgan sayt manzili yoki API endpointlarini kiritasiz.
+                    </p>
                 </div>
             </div>
-            
+
             <!-- Step 3 -->
             <div class="step-card">
                 <div class="step-number">3</div>
                 <div>
                     <h4>Web saytni tekshirish</h4>
-                    <p style="margin-top: 5px;">Domain egaligini aniqlash uchun maxsus faylni serveringizga joylaysiz.</p>
+                    <p style="margin-top: 5px;">Domain egaligini aniqlash uchun maxsus faylni serveringizga joylaysiz.
+                    </p>
                 </div>
             </div>
-            
+
             <!-- Step 4 -->
             <div class="step-card">
                 <div class="step-number">4</div>
@@ -1249,13 +1323,14 @@
                     <p style="margin-top: 5px;">Tegishli xavfsizlik tarifini tanlab, to'lovni amalga oshirasiz.</p>
                 </div>
             </div>
-            
+
             <!-- Step 5 -->
             <div class="step-card">
                 <div class="step-number">5</div>
                 <div>
                     <h4>Skanerlash</h4>
-                    <p style="margin-top: 5px;">Avtomatlashtirilgan chukur skanerlashni boshlaysiz va hisobot olasiz.</p>
+                    <p style="margin-top: 5px;">Avtomatlashtirilgan chukur skanerlashni boshlaysiz va hisobot olasiz.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1266,7 +1341,8 @@
         <div class="cta-glass-box">
             <h2>Kiberxavflarga Qarshi <span>Ishonchli Qalqon</span></h2>
             <p>
-                Bizning professional skanerlash algoritmlarimiz har qanday zamonaviy zaifliklarni tezkor aniqlab beradi. Biz bilan tizimingiz har doim xavfsiz holatda qoladi.
+                Bizning professional skanerlash algoritmlarimiz har qanday zamonaviy zaifliklarni tezkor aniqlab beradi.
+                Biz bilan tizimingiz har doim xavfsiz holatda qoladi.
             </p>
             <button class="btn btn-gold open-modal">Hozir boshlash</button>
         </div>
@@ -1277,22 +1353,25 @@
         <div class="modal-card">
             <div class="modal-glow-back"></div>
             <button class="modal-close-btn" id="close-modal">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px;">
-                    <line x1="18" y1="6" x2="6" y2="18"/>
-                    <line x1="6" y1="6" x2="18" y2="18"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" style="width:20px; height:20px;">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
             </button>
             <div class="modal-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polyline points="12 6 12 12 16 14"/>
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
                 </svg>
             </div>
             <h3>Tez orada ishga tushadi!</h3>
-            <p>DevGuard xizmati ayni damda yakuniy testdan o'tmoqda. Tizim ishga tushganida birinchilardan bo'lib kirish huquqiga ega bo'lish uchun pochtangizni qoldiring.</p>
-            
+            <p>DevGuard xizmati ayni damda yakuniy testdan o'tmoqda. Tizim ishga tushganida birinchilardan bo'lib kirish
+                huquqiga ega bo'lish uchun pochtangizni qoldiring.</p>
+
             <form class="modal-form" id="lead-form">
-                <input type="email" class="modal-input" placeholder="Elektron pochtangizni kiriting" required id="email-field">
+                <input type="email" class="modal-input" placeholder="Elektron pochtangizni kiriting" required
+                    id="email-field">
                 <button type="submit" class="btn btn-gold" style="width: 100%;">Xabardor qilish</button>
             </form>
             <div class="modal-success-msg" id="success-message">Ajoyib! Elektron pochtangiz qabul qilindi.</div>
@@ -1304,7 +1383,7 @@
         <div class="footer-content">
             <a href="#" class="logo">
                 <svg class="logo-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
                 <span>devguard.uz</span>
             </a>
@@ -1328,7 +1407,7 @@
             const leadForm = document.getElementById('lead-form');
             const successMessage = document.getElementById('success-message');
             const emailField = document.getElementById('email-field');
-            
+
             // Mobile Menu Elements
             const burgerBtn = document.getElementById('burger-btn');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -1357,7 +1436,7 @@
             };
 
             closeModalButton.addEventListener('click', closeModal);
-            
+
             // Close on overlay click
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
@@ -1371,7 +1450,7 @@
                 if (emailField.value.trim() !== '') {
                     leadForm.style.display = 'none';
                     successMessage.style.display = 'block';
-                    
+
                     // Automatically close after 3 seconds
                     setTimeout(() => {
                         closeModal();
@@ -1395,4 +1474,5 @@
         });
     </script>
 </body>
+
 </html>
